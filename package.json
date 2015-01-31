@@ -6,5 +6,6 @@
   "repository": "https://github.com/mark-hahn/sub-atom",
   "license": "MIT",
   "dependencies": {
+    "space-pen": "*"
   }
 }

@@ -20,19 +20,19 @@ To install sub-atom simply use `npm install atom-helper`.  Then load and initial
 
 ```coffeescript
 SubAtom = require('sub-atom')
-sub = new SubAtom
+subs = new SubAtom
 ```
 
-The `sub` object has a function `add` that can be used exactly as `CompositeDisposable::add` is used.  An example ...
+The `subs` object has a function `add` that can be used exactly as `CompositeDisposable::add` is used.  An example ...
 
 ```coffeescript
-sub.add editor.onDidChange ->
+subs.add editor.onDidChange ->
 ```
 
 The same function `add` can add DOM events with this signature.
 
 ```coffeescript
-sub.add target, events, [selector], handler
+subs.add target, events, [selector], handler
 ```
 
 **target:** A DOM element or a jQuery object containing a DOM element..  
@@ -43,10 +43,10 @@ sub.add target, events, [selector], handler
 
 **handler:** A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
 
-The sub object also has a function `dispose` that disposes all added events.  This is identical to the method `CompositeDisposable::dispose`. Use ...
+The subs object also has a function `dispose` that disposes all added events.  This is identical to the method `CompositeDisposable::dispose`. Use ...
 
 ```coffeescript
-sub.dispose()
+subs.dispose()
 ```
 
 ## License
