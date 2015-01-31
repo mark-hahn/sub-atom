@@ -1,3 +1,6 @@
+## 0.1.2 - 1/31/2015
+- fixed install instructions
+
 ## 0.1.1 - 1/31/2015
 - fixed disposables
 
