@@ -16,7 +16,7 @@ Obviously this is not acceptable for real-world code.  Sub-atom provides the cla
 
 ## Usage
   
-To install sub-atom simply use `npm install atom-helper`.  Then load and initialize the sub-atom module with ...
+To install sub-atom simply use `npm install sub-atom`.  Then load and initialize the sub-atom module with ...
 
 ```coffeescript
 SubAtom = require('sub-atom')
