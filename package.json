@@ -1,11 +1,11 @@
 {
   "name": "sub-atom",
-  "main": "./lib/subatom",
-  "version": "0.1.0",
+  "main": "./lib/sub-atom",
+  "version": "0.1.1",
   "description": "A replacement for Atom's CompositeDisposable for easy subscribing to DOM events.",
   "repository": "https://github.com/mark-hahn/sub-atom",
   "license": "MIT",
   "dependencies": {
-    "space-pen": "*"
+    "jquery": "^2"
   }
 }

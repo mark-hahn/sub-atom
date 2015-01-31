@@ -3,7 +3,7 @@
 ###
 
 {CompositeDisposable, Disposable} = require 'atom'
-{$} = require 'space-pen'
+jQuery = require 'jquery'
 
 module.exports = 
 class SubAtom
@@ -11,9 +11,9 @@ class SubAtom
   constructor: ->
     @disposables = new CompositeDisposable
   
-  add: (target, event, selector, handler) -> args  
+  add: (target, event, selector, handler) ->  
     if target instanceof Disposable
-      disposables.add target
+      @disposables.add target
       return
       
     if not target instanceof jQuery
@@ -28,5 +28,5 @@ class SubAtom
     @disposables.add new Disposable ->
       subscription.off event, handler
         
-  dispose: -> disposables.dispose()
+  dispose: -> @disposables.dispose()
     
