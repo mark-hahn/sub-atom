@@ -1,3 +1,6 @@
+## 0.1.3 - 1/31/2015
+- streamlined code
+
 ## 0.1.2 - 1/31/2015
 - fixed install instructions
 
