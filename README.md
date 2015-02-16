@@ -49,6 +49,10 @@ The subs object also has a function `dispose` that disposes all added events.  T
 subs.dispose()
 ```
 
+## Note
+
+When you call `SubAtom::add` with a native element instead of a jQuery object the handler will be called with a jQuery object instead of the native event.  You can get the native event with `event.originalEvent`.
+
 ## License
 
 Sub-atom is copyright Mark Hahn with the MIT license.

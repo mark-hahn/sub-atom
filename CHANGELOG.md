@@ -1,3 +1,6 @@
+## 0.1.4 - 2/15/2015
+- Now passes all single args as Disposable
+
 ## 0.1.3 - 1/31/2015
 - streamlined code
 

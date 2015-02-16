@@ -12,7 +12,8 @@ class SubAtom
   
   add: (target, events, selector, handler) ->
   
-    if target instanceof Disposable
+    # if target instanceof Disposable
+    if not events
       @disposables.add target
       return
 
