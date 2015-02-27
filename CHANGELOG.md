@@ -1,3 +1,6 @@
+## 1.0.0 - 2/26/2015
+- Added auto-dispose on event feature
+
 ## 0.1.4 - 2/15/2015
 - Now passes all single args as Disposable
 
