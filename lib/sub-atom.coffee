@@ -20,10 +20,12 @@ class SubAtom
           autoDisposables.dispose()
           @disposables.remove autoDisposables
         @disposables.add autoDisposables
+        autoDisposables
       catch e
         console.log 'SubAtom::add, invalid dispose event', disposeEventObj, disposeEventType, e
     else
       @disposables.add disposable
+      disposable
         
   addElementListener: (ele, events, selector, disposeEventObj, disposeEventType, handler) ->
     if selector
